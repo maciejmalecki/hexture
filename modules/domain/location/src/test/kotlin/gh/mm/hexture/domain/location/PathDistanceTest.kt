@@ -16,4 +16,11 @@ class PathDistanceTest : StringSpec({
     "distance of one segment path is a distance between locations" {
         list(Location(0.0, 0.0), Location(1.0, 1.0)).distance() shouldBe sqrt(2.0)
     }
+    "distance of two segment path is a sum of distances between locations" {
+        list(
+                Location(0.0, 0.0),
+                Location(1.0, 1.0),
+                Location(2.0, 1.0)
+        ).distance() shouldBe sqrt(2.0) + 1.0
+    }
 })
