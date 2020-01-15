@@ -1,4 +1,4 @@
-package mm.gh.hexture.app.taskmgmt.store
+package mm.gh.hexture.app.taskmgmt.adapter
 
 import gh.mm.hexture.domain.tasks.ProjectId
 import gh.mm.hexture.domain.tasks.Task

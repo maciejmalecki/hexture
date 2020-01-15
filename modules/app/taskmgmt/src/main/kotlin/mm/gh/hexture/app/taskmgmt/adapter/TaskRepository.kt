@@ -1,3 +1,3 @@
-package mm.gh.hexture.app.taskmgmt.store
+package mm.gh.hexture.app.taskmgmt.adapter
 
 interface TaskRepository : TaskReader, TaskUpdater
