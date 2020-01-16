@@ -7,6 +7,9 @@ plugins {
 
 dependencies {
     implementation(project(":modules:domain:users"))
+    implementation(project(":modules:domain:tasks"))
+    implementation(project(":modules:app:taskmgmt"))
+    implementation(project(":modules:adapters:store:inmem"))
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")

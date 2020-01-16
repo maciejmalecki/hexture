@@ -1,4 +1,4 @@
-package gh.mm.hexture.domains.users.person
+package gh.mm.hexture.domain.users.person
 
 import java.util.UUID
 

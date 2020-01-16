@@ -4,6 +4,9 @@ plugins {
 
 dependencies {
 
+    implementation(project(":modules:domain:tasks"))
+    implementation(project(":modules:app:taskmgmt"))
+
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("io.vavr:vavr-kotlin:0.10.2")

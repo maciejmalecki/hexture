@@ -1,7 +1,7 @@
 package gh.mm.hexture.domain.tasks
 
-import gh.mm.hexture.domains.users.person.NoPersonId
-import gh.mm.hexture.domains.users.person.PersonId
+import gh.mm.hexture.domain.users.person.NoPersonId
+import gh.mm.hexture.domain.users.person.PersonId
 import java.util.UUID
 
 
