@@ -12,9 +12,3 @@ dependencies {
 
     testImplementation("io.kotlintest:kotlintest-runner-junit5:3.4.2")
 }
-
-java.sourceCompatibility = JavaVersion.VERSION_11
-
-tasks.withType<Test> {
-    useJUnitPlatform()
-}
