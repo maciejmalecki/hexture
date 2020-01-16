@@ -1,4 +1,4 @@
-package mm.gh.hexture.api.restflux
+package gh.mm.hexture.api.restflux
 
 import gh.mm.hexture.domains.users.User
 
