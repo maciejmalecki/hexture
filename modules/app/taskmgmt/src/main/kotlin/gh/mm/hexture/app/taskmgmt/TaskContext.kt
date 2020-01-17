@@ -9,11 +9,11 @@ import gh.mm.hexture.app.taskmgmt.adapter.TaskRepository
 
 class TaskContext(val user: User, val project: Project, private val taskRepository: TaskRepository) {
 
-    fun allTasks() = taskRepository.findAll(project.id)
+    suspend fun allTasks() = taskRepository.findAll(project.id)
 
-    fun findTask(id: TaskId) = taskRepository.findById(id)
+    suspend fun findTask(id: TaskId) = taskRepository.findById(id)
 
-    fun createNew(taskData: TaskData) = taskRepository.create(project.id, taskData)
+    suspend fun createNew(taskData: TaskData) = taskRepository.create(project.id, taskData)
 
-    fun save(task: Task) = taskRepository.save(task)
+    suspend fun save(task: Task) = taskRepository.save(task)
 }

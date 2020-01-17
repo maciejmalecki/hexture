@@ -6,6 +6,6 @@ import gh.mm.hexture.domain.tasks.TaskId
 import io.vavr.collection.List
 
 interface TaskReader {
-    fun findById(id: TaskId): Task?
-    fun findAll(projectId: ProjectId): List<Task>
+    suspend fun findById(id: TaskId): Task?
+    suspend fun findAll(projectId: ProjectId): List<Task>
 }

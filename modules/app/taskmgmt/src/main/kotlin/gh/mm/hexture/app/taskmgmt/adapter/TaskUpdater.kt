@@ -6,7 +6,7 @@ import gh.mm.hexture.domain.tasks.TaskData
 import gh.mm.hexture.domain.tasks.TaskId
 
 interface TaskUpdater {
-    fun create(projectId: ProjectId, taskData: TaskData): Task
-    fun save(task: Task): TaskId
-    fun delete(id: TaskId)
+    suspend fun create(projectId: ProjectId, taskData: TaskData): Task
+    suspend fun save(task: Task): TaskId
+    suspend fun delete(id: TaskId)
 }

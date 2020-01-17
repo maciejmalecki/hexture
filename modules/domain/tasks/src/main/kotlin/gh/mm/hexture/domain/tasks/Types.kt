@@ -6,12 +6,12 @@ import java.util.UUID
 
 
 data class ProjectId(
-        val projectId: UUID,
-        val projectPrefix: String
+        val projectId: UUID
 )
 
 data class Project(
-        val id: ProjectId
+        val id: ProjectId,
+        val name: String
 )
 
 data class TaskId(
