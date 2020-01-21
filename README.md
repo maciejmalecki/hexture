@@ -1,4 +1,6 @@
 # hexture
+Sample application with hexagonal architecture using Spring WebFlux and written in Kotlin.
+
 ## How to build
 ```
 ./gradlew build
