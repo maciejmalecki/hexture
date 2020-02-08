@@ -5,6 +5,8 @@ plugins {
 dependencies {
     implementation(project(":modules:domain:tasks"))
     implementation(project(":modules:domain:users"))
+    // TODO: remove
+    implementation(project(":modules:domain:orders"))
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
