@@ -1,7 +1,13 @@
 package gh.mm.hexture.domain.orders;
 
 import io.vavr.collection.Set;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
 
+@Getter
+@Builder
+@AllArgsConstructor
 public class Order {
 
     private final long id;
@@ -10,21 +16,4 @@ public class Order {
 
     private final Set<OrderLine> orderLines;
 
-    public Order(long id, String description, Set<OrderLine> orderLines) {
-        this.id = id;
-        this.description = description;
-        this.orderLines = orderLines;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public Set<OrderLine> getOrderLines() {
-        return orderLines;
-    }
 }
